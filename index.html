@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Aventura no Supermercado</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura no Supermercado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aventura no Supermercado</h1>
+        
+        <div id="game">
+            <h2>Jogadores</h2>
+            <input type="text" id="nome-jogador" placeholder="Nome do Jogador">
+            <button onclick="adicionarJogador()">Adicionar Jogador</button>
+            <ul id="lista-jogadores"></ul>
+            
+            <h3>Jogador Atual: <span id="jogador-atual"></span></h3>
+            <div id="saldo">Saldo: R$50,00</div>
+            <div id="pontos">Pontos: 0</div>
+
+            <h3>Cesta de Compras</h3>
+            <ul id="cesta"></ul>
+            <div id="dica"></div>
+            <div id="desafio"></div>
+
+            <h3>Escolha um Produto</h3>
+            <button onclick="adicionarProduto('Maçã', 3.00, 'Rica em fibras!', 'fruta')">Maçã - R$3.00</button>
+            <button onclick="adicionarProduto('Banana', 2.00, 'Ótima fonte de potássio!', 'fruta')">Banana - R$2.00</button>
+            <button onclick="adicionarProduto('Brócolis', 4.00, 'Repleto de vitaminas!', 'vegetal')">Brócolis - R$4.00</button>
+            <button onclick="adicionarProduto('Peito de Frango', 15.00, 'Alto em proteína!', 'carne')">Peito de Frango - R$15.00</button>
+            <button onclick="adicionarProduto('Arroz Integral', 5.00, 'Escolha saudável!', 'grão')">Arroz Integral - R$5.00</button>
+            <button onclick="adicionarProduto('Iogurte', 4.00, 'Bom para o intestino!', 'laticínio')">Iogurte - R$4.00</button>
+            <button onclick="adicionarProduto('Espinafre', 3.50, 'Ótimo para a saúde!', 'vegetal')">Espinafre - R$3.50</button>
+            <button onclick="adicionarProduto('Quinoa', 10.00, 'Supergrão nutritivo!', 'grão')">Quinoa - R$10.00</button>
+            <button onclick="adicionarProduto('Lentilhas', 6.00, 'Ricas em proteína e fibra!', 'grão')">Lentilhas - R$6.00</button>
+            <button onclick="adicionarProduto('Salmão', 25.00, 'Ómega-3 é essencial!', 'peixe')">Salmão - R$25.00</button>
+            <button onclick="adicionarProduto('Castanhas', 12.00, 'Cheias de gorduras saudáveis!', 'oleaginosas')">Castanhas - R$12.00</button>
+            <button onclick="adicionarProduto('Abacate', 7.00, 'Rico em gorduras boas!', 'fruta')">Abacate - R$7.00</button>
+            <button onclick="adicionarProduto('Cenoura', 2.50, 'Boa para a visão!', 'vegetal')">Cenoura - R$2.50</button>
+            <button onclick="adicionarProduto('Tomate', 3.00, 'Rico em licopeno!', 'vegetal')">Tomate - R$3.00</button>
+            <button onclick="adicionarProduto('Ovos', 8.00, 'Excelente fonte de proteína!', 'ovos')">Ovos - R$8.00</button>
+            <button onclick="adicionarProduto('Batata Doce', 4.00, 'Carboidrato saudável!', 'vegetal')">Batata Doce - R$4.00</button>
+
+            <h3>Rodada de Perguntas</h3>
+            <div id="pergunta" style="display: none;">
+                <p id="pergunta-texto"></p>
+                <button onclick="responder(0)" id="resposta1"></button>
+                <button onclick="responder(1)" id="resposta2"></button>
+            </div>
+
+            <button onclick="girarRoleta()">Girar Roleta</button>
+            <div id="roleta" style="display: none;">
+                <canvas id="canvas-roleta" width="300" height="300"></canvas>
+                <button onclick="rodarRoleta()">Rodar a Roleta</button>
+            </div>
+
+            <div id="mensagem-final" style="display: none;">
+                <h2>Fim de Jogo!</h2>
+                <button onclick="recomeçar()">Recomeçar Jogo</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
